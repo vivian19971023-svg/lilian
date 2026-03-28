@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教育心靈 ‧ 啟蒙未來 | 幼教老師個人專業品牌</title>
+    <!-- 引入 Google Fonts: Noto Sans TC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary-soft: #86a397; /* 溫潤的綠色，代表成長 */
+            --accent-warm: #e9c46a;  /* 溫暖的陽光黃 */
+            --bg-light: #fdfaf6;    /* 米白溫潤底色 */
+            --text-main: #4a5568;
+        }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            scroll-behavior: smooth;
+        }
+        .soft-gradient-text {
+            background: linear-gradient(90deg, #6b8e23, #86a397);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-padding {
+            padding: 100px 20px;
+        }
+        .card-growth {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: white;
+            border-radius: 2rem;
+            border: 1px solid #edf2f7;
+        }
+        .card-growth:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+            border-color: var(--primary-soft);
+        }
+        /* 圓潤的按鈕 */
+        .btn-round {
+            border-radius: 9999px;
+            transition: all 0.3s;
+        }
+        /* 自定義滾動條 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e0;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-orange-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-emerald-700 flex items-center">
+                <i data-lucide="sprout" class="mr-2 w-6 h-6"></i> TEACHER-DIARY
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-emerald-600 transition">首頁</a>
+                <a href="#about" class="hover:text-emerald-600 transition">教育理念</a>
+                <a href="#skills" class="hover:text-emerald-600 transition">專業核心</a>
+                <a href="#experience" class="hover:text-emerald-600 transition">教學歷程</a>
+                <a href="#contact" class="px-5 py-2 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-md shadow-emerald-200">親師聯繫</a>
+            </div>
+            <div class="md:hidden text-emerald-700">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 (Hero) -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:20px_20px]">
+        <div class="max-w-4xl px-6 text-center">
+            <div class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-bold mb-6">
+                公立幼兒園 ‧ 五年深耕教學
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-800 leading-tight">
+                用心觀察，<br><span class="soft-gradient-text">陪孩子走一段溫柔的路</span>
+            </h1>
+            <p class="text-slate-500 text-lg md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto font-light">
+                在高雄市公幼服務的第五個年頭，我始終相信「教育即生活」。致力於營造充滿安全感與探索機會的學習環境，讓每個孩子在愛中發芽。
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#about" class="px-8 py-3 bg-emerald-600 text-white btn-round font-bold hover:bg-emerald-700 transition flex items-center justify-center shadow-lg shadow-emerald-200">
+                    了解我的教學理念
+                </a>
+                <a href="#experience" class="px-8 py-3 border border-emerald-200 text-emerald-700 btn-round font-bold hover:bg-emerald-50 transition flex items-center justify-center bg-white">
+                    瀏覽班級實務經驗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我/教育理念 (About) -->
+    <section id="about" class="section-padding">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <!-- 裝飾背景 -->
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-200/50 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-emerald-200/50 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative bg-white p-3 rounded-[2.5rem] shadow-xl rotate-1">
+                        <div class="bg-slate-100 rounded-[2rem] overflow-hidden aspect-[4/5] flex items-center justify-center border-4 border-white">
+                            <span class="text-slate-400 text-sm text-center px-4">[請放您在校園與孩子互動的照片]</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-emerald-600 font-bold tracking-widest mb-4">ABOUT ME</h2>
+                    <h3 class="text-3xl font-bold mb-6 text-slate-800">在高雄市的陽光下，<br>播下智慧的種子</h3>
+                    <p class="text-slate-500 mb-6 leading-relaxed">
+                        我是 [您的姓名]。五年前，我帶著對教育的初心踏入了高雄市公立幼兒園。公幼的環境給予了我與多元家庭溝通的機會，也讓我學會如何靈活運用在地資源開發特色課程。
+                    </p>
+                    <p class="text-slate-500 mb-8 leading-relaxed">
+                        我擅長觀察幼兒的需求，並透過「學習區」的規劃引發主動學習。對我來說，老師不只是知識的傳遞者，更是觀察者與支持者，確保每顆種子都能依照自己的步調開花。
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-4 border-emerald-500 pl-4 py-2">
+                            <div class="text-2xl font-bold text-slate-800">5+</div>
+                            <div class="text-sm text-slate-500 font-medium">公幼服務年資</div>
+                        </div>
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                            <div class="text-2xl font-bold text-slate-800">100+</div>
+                            <div class="text-sm text-slate-500 font-medium">輔導家庭數</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心專業 (Skills) -->
+    <section id="skills" class="section-padding bg-[#f0f4f1]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-emerald-600 font-bold tracking-widest mb-2">PROFESSIONAL</h2>
+                <h3 class="text-3xl font-bold text-slate-800">教育核心職能</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 卡片 1 -->
+                <div class="p-10 card-growth">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="palette" class="text-emerald-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-800">主題課程設計</h4>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        結合幼兒興趣與發展指標，設計多元主題與六大領域課程，落實「做中學」的教育價值。
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[11px] font-bold text-emerald-700">
+                        <span class="px-2 py-1 bg-emerald-50 rounded">學習區規劃</span>
+                        <span class="px-2 py-1 bg-emerald-50 rounded">教具製作</span>
+                    </div>
+                </div>
+                <!-- 卡片 2 -->
+                <div class="p-10 card-growth">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="messages-square" class="text-orange-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-800">親師溝通協作</h4>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        秉持同理心與專業，建立與家長間的信任橋樑，協助解決教養問題，共創親師生三贏。
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[11px] font-bold text-orange-700">
+                        <span class="px-2 py-1 bg-orange-50 rounded">正向輔導</span>
+                        <span class="px-2 py-1 bg-orange-50 rounded">個別諮詢</span>
+                    </div>
+                </div>
+                <!-- 卡片 3 -->
+                <div class="p-10 card-growth">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-8">
+                        <i data-lucide="heart-handshake" class="text-blue-600"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-800">班級經營管理</h4>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">
+                        營造正向接納的班級氣氛，引導幼兒建立常規與同儕關係，提升孩子自理與社交能力。
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[11px] font-bold text-blue-700">
+                        <span class="px-2 py-1 bg-blue-50 rounded">作息安排</span>
+                        <span class="px-2 py-1 bg-blue-50 rounded">品格教育</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教學歷程 (Experience) -->
+    <section id="experience" class="section-padding">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-emerald-600 font-bold tracking-widest mb-2">MY JOURNEY</h2>
+                <h3 class="text-3xl font-bold text-slate-800">實務經驗分享</h3>
+            </div>
+            
+            <div class="relative">
+                <!-- 中央線條 -->
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-px bg-slate-200"></div>
+
+                <!-- 經歷 1 -->
+                <div class="relative mb-12 md:flex justify-between items-center w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[-8px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow"></div>
+                    <div class="ml-8 md:ml-0 md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-emerald-600 uppercase">2021 - 至今</span>
+                        <h4 class="text-lg font-bold text-slate-800 mt-1">班級導師 / 高雄市立 [XX] 幼兒園</h4>
+                        <p class="text-slate-500 text-sm mt-2 leading-relaxed">主導大班畢業主題課程，設計「小小導覽員」高雄在地巡禮活動，獲家長高度肯定與校內優良課程分享。</p>
+                    </div>
+                </div>
+
+                <!-- 經歷 2 -->
+                <div class="relative mb-12 md:flex justify-between items-center w-full">
+                    <div class="ml-8 md:ml-0 md:w-5/12 md:text-right bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-emerald-600 uppercase">2019 - 2021</span>
+                        <h4 class="text-lg font-bold text-slate-800 mt-1">班級導師 / 高雄市立 [XX] 幼兒園</h4>
+                        <p class="text-slate-500 text-sm mt-2 leading-relaxed">負責幼小銜接專案，規劃親師交流講座，協助孩子從家庭順利過渡到公幼團體生活。</p>
+                    </div>
+                    <div class="absolute left-[-8px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow"></div>
+                    <div class="hidden md:block w-5/12"></div>
+                </div>
+
+                <!-- 經歷 3 -->
+                <div class="relative md:flex justify-between items-center w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[-8px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 bg-slate-300 rounded-full border-4 border-white shadow"></div>
+                    <div class="ml-8 md:ml-0 md:w-5/12 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                        <span class="text-xs font-bold text-emerald-600 uppercase">2018 - 2019</span>
+                        <h4 class="text-lg font-bold text-slate-800 mt-1">實習/代課老師 / 高雄市立 [XX] 幼兒園</h4>
+                        <p class="text-slate-500 text-sm mt-2 leading-relaxed">協助大型園所活動執行，參與教案編寫與環境佈置，累積扎實的現場實務力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 親師聯繫 (Contact) -->
+    <section id="contact" class="section-padding bg-emerald-50/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-emerald-100">
+                <div class="p-12 md:w-1/2 bg-emerald-600 text-white flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold mb-6">讓我們一起為孩子<br>創造更好的未來</h3>
+                    <p class="text-emerald-50 mb-10 leading-relaxed font-light">如果您有任何教學交流、親師教養疑問，或是教育專案合作的需求，歡迎隨時與我連繫。</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <span>teacher.name@email.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <span>台灣 ‧ 高雄市</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-12 md:w-1/2">
+                    <form class="space-y-5" onsubmit="event.preventDefault(); alert('感謝您的來信，我會盡快回覆！');">
+                        <div>
+                            <label class="text-sm font-bold text-slate-600">您的稱呼 (家長或教育同仁)</label>
+                            <input type="text" class="w-full mt-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-200 outline-none" placeholder="例如：大寶家長">
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-slate-600">聯繫方式 (Email/電話)</label>
+                            <input type="text" class="w-full mt-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-200 outline-none" placeholder="請留下您的聯繫方式">
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-slate-600">留言內容</label>
+                            <textarea rows="4" class="w-full mt-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-200 outline-none" placeholder="請輸入您想交流的內容..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 transition shadow-lg shadow-emerald-200 mt-4">送出聯繫訊息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-16 text-center">
+        <div class="text-emerald-700 font-bold mb-4 flex justify-center items-center">
+             <i data-lucide="heart" class="w-5 h-5 mr-2 fill-emerald-600"></i> 用心教育，從愛出發
+        </div>
+        <div class="text-slate-400 text-sm">© 2024 [您的姓名]. All rights reserved. <br> 高雄市公立幼兒園專業教師履歷</div>
+    </footer>
+
+    <!-- 初始化圖標 -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
