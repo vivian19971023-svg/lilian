@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小太陽幼兒園 - 主題課程分享</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Zhi+Mang+Xing&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #fffaf0;
+        }
+
+        .hero-pattern {
+            background-color: #ffed4a;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f9ac05' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4zm20 0c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4zM80 0c-3.314 0-6 2.686-6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h-2zM60 0c-3.314 0-6 2.686-6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h-2zM40 0c-3.314 0-6 2.686-6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h-2zM20 0c-3.314 0-6 2.686-6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4h2c-2.21 0-4-1.79-4-4 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .rounded-xl-plus {
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <span class="text-3xl mr-2">☀️</span>
+                    <span class="text-2xl font-bold text-orange-500 tracking-wider">小太陽主題課程</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="text-orange-500 hover:text-orange-600">首頁</a>
+                    <a href="#themes" class="text-gray-600 hover:text-orange-500">主題分享</a>
+                    <a href="#activities" class="text-gray-600 hover:text-orange-500">精彩活動</a>
+                    <a href="#contact" class="text-gray-600 hover:text-orange-500">親師溝通</a>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <header id="home" class="hero-pattern py-16 md:py-24 px-4 border-b-4 border-orange-200">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-orange-600 mb-6 leading-tight">
+                探索、玩耍、成長<br>讓每個孩子在驚奇中學習
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">
+                我們致力於開發多元感官的主題課程，開啟孩子對世界的好奇心。
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg">
+                    查看最新主題
+                </button>
+                <button class="bg-white text-orange-500 border-2 border-orange-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-50 transition shadow-lg">
+                    認識我們
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主題課程列表 -->
+    <section id="themes" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">✨ 主題課程分類 ✨</h2>
+            <div class="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            
+            <!-- 自然探索 -->
+            <div class="card bg-green-50 rounded-xl-plus overflow-hidden border-2 border-green-100 p-6 text-center">
+                <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-4xl">🌱</span>
+                </div>
+                <h3 class="text-xl font-bold text-green-700 mb-3">自然與科學</h3>
+                <p class="text-gray-600 mb-6">從一粒種子開始，觀察生命的奧秘與大自然的節律。</p>
+                <button class="text-green-600 font-bold hover:underline">了解更多</button>
+            </div>
+
+            <!-- 藝術創作 -->
+            <div class="card bg-pink-50 rounded-xl-plus overflow-hidden border-2 border-pink-100 p-6 text-center">
+                <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-4xl">🎨</span>
+                </div>
+                <h3 class="text-xl font-bold text-pink-700 mb-3">創意美學</h3>
+                <p class="text-gray-600 mb-6">用畫筆和雙手，將天馬行空的想像化為實體的藝術品。</p>
+                <button class="text-pink-600 font-bold hover:underline">了解更多</button>
+            </div>
+
+            <!-- 生活體驗 -->
+            <div class="card bg-blue-50 rounded-xl-plus overflow-hidden border-2 border-blue-100 p-6 text-center">
+                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-4xl">🏠</span>
+                </div>
+                <h3 class="text-xl font-bold text-blue-700 mb-3">生活小達人</h3>
+                <p class="text-gray-600 mb-6">學習自我照顧、家務參與，培養獨立自理的生活能力。</p>
+                <button class="text-blue-600 font-bold hover:underline">了解更多</button>
+            </div>
+
+            <!-- 體能與遊戲 -->
+            <div class="card bg-yellow-50 rounded-xl-plus overflow-hidden border-2 border-yellow-100 p-6 text-center">
+                <div class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-4xl">🤸</span>
+                </div>
+                <h3 class="text-xl font-bold text-yellow-700 mb-3">大肌肉活動</h3>
+                <p class="text-gray-600 mb-6">在奔跑與跳躍中鍛鍊體魄，享受團隊運動的熱情與快樂。</p>
+                <button class="text-yellow-600 font-bold hover:underline">了解更多</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 精彩活動輪播樣式 -->
+    <section id="activities" class="bg-orange-50 py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">📸 本月精彩活動</h2>
+                    <p class="text-gray-600">捕捉孩子們在主題學習中的每個感動瞬間</p>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-orange-600 font-bold">查看全部相簿 →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 活動 1 -->
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea24ec8f4f6?auto=format&fit=crop&q=80&w=800" alt="小農夫體驗" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded w-fit mb-2">自然觀察</span>
+                        <h4 class="text-white text-xl font-bold">小農夫種菜趣</h4>
+                        <p class="text-gray-200 text-sm">親手種下小白菜，期待發芽的那一天。</p>
+                    </div>
+                </div>
+                <!-- 活動 2 -->
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=800" alt="彩色世界" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded w-fit mb-2">創意美學</span>
+                        <h4 class="text-white text-xl font-bold">彩色的雨滴</h4>
+                        <p class="text-gray-200 text-sm">利用吹畫技巧，創作出繽紛的雨季森林。</p>
+                    </div>
+                </div>
+                <!-- 活動 3 -->
+                <div class="group relative overflow-hidden rounded-3xl h-80 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?auto=format&fit=crop&q=80&w=800" alt="小小廚師" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded w-fit mb-2">生活體驗</span>
+                        <h4 class="text-white text-xl font-bold">健康飯糰DIY</h4>
+                        <p class="text-gray-200 text-sm">動動小手捏飯糰，認識營養均衡的重要性。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 家長互動與聯絡 -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border-4 border-yellow-200 overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="bg-yellow-400 p-10 text-white">
+                    <h2 class="text-3xl font-bold mb-6">有任何悄悄話想對我們說嗎？</h2>
+                    <p class="mb-8 opacity-90">不管是對課程的建議，或是想分享孩子在家的成長，都歡迎隨時聯絡我們。</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone-alt w-8"></i>
+                            <span>(02) 1234-5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope w-8"></i>
+                            <span>hello@sunshine-edu.tw</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-8"></i>
+                            <span>台北市幸福里陽光路 100 號</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-10 border-t border-white/20">
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white/20 p-3 rounded-full hover:bg-white/40 transition"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="bg-white/20 p-3 rounded-full hover:bg-white/40 transition"><i class="fab fa-line text-xl"></i></a>
+                            <a href="#" class="bg-white/20 p-3 rounded-full hover:bg-white/40 transition"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-10">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">您的稱呼</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 transition" placeholder="例如：王小明媽媽">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">聯絡電話</label>
+                            <input type="tel" class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 transition" placeholder="您的電話號碼">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">留言內容</label>
+                            <textarea class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 transition h-32" placeholder="寫下您的建議或疑問..."></textarea>
+                        </div>
+                        <button type="button" onclick="handleSubmit()" class="w-full bg-orange-500 text-white font-bold py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">
+                            送出訊息
+                        </button>
+                    </form>
+                    <!-- 成功的消息提示 (隱藏) -->
+                    <div id="successMsg" class="hidden text-center py-10">
+                        <div class="text-5xl mb-4">💌</div>
+                        <h3 class="text-xl font-bold text-green-600">訊息已成功送出！</h3>
+                        <p class="text-gray-600 mt-2">我們會盡快回覆您。</p>
+                        <button onclick="resetForm()" class="mt-6 text-orange-500 hover:underline">再次留言</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-800 text-white py-10 text-center px-4">
+        <p class="text-lg mb-4">🌈 小太陽幼兒園 - 主題課程網頁平台</p>
+        <p class="text-gray-400 text-sm">© 2024 小太陽教育機構. 版權所有. 為了孩子，我們用心教育。</p>
+    </footer>
+
+    <script>
+        function handleSubmit() {
+            const form = document.getElementById('contactForm');
+            const successMsg = document.getElementById('successMsg');
+            
+            // 簡單的動畫效果模擬提交
+            form.classList.add('opacity-0');
+            setTimeout(() => {
+                form.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+            }, 300);
+        }
+
+        function resetForm() {
+            const form = document.getElementById('contactForm');
+            const successMsg = document.getElementById('successMsg');
+            
+            successMsg.classList.add('hidden');
+            form.classList.remove('hidden');
+            setTimeout(() => {
+                form.classList.remove('opacity-0');
+            }, 50);
+            form.reset();
+        }
+
+        // 監聽滾動，增加導航欄效果
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
